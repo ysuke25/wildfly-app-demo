@@ -22,7 +22,8 @@ public class Smaple {
         String os_distribution = "";
 
         try {
-            String command = "/opt/ibm/wlp/bin/productInfo version";
+            //String command = "/opt/ibm/wlp/bin/productInfo version";
+            String command = "/opt/ol/wlp/bin/productInfo version";
             Process process = Runtime.getRuntime().exec(command);
             BufferedReader reader = new BufferedReader(new InputStreamReader(
                     process.getInputStream()));
